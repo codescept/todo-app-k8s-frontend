@@ -16,7 +16,7 @@ spec:
       - name: todo-client-app
         image: meharabdullah/todo-client-app:latest
         ports:
-        - containerPort: 8081
+        - containerPort: 80
         imagePullPolicy: IfNotPresent
 ---
 apiVersion: v1
@@ -29,4 +29,4 @@ spec:
     app: todo-client-app
   ports:
   - port: 8081
-    targetPort: 8081
+    targetPort: 80
